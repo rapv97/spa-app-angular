@@ -1,0 +1,25 @@
+
+<h2>Por pais</h2>
+<hr>
+
+<div class="row">
+
+  <div class="col">
+      <shared-search-box
+      placeholder="Buscar por pais"
+      (onValue)="searchCountry($event)"
+      >
+
+      </shared-search-box>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col">
+    <countries-country-table
+      [countries]="country"
+    >
+
+    </countries-country-table>
+  </div>
+</div>
