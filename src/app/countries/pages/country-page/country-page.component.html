@@ -10,7 +10,7 @@
 <div *ngIf="country; else loading">
   <div class="row">
     <div class="col-12">
-      <h2>Pais: <strong> {{ country.name?.common }}</strong> </h2>
+      <h2>Pais: <strong> {{ country.name.common }}</strong> </h2>
       <hr>
 
     </div>
@@ -20,7 +20,7 @@
 
     <div class="col-4">
       <h3>Bandera</h3>
-      <img [src]="country.flags.svg" [alt]="country.name?.common" class="img-thumbnail"/>
+      <img [src]="country.flags.svg" [alt]="country.name.common" class="img-thumbnail"/>
 
     </div>
 
@@ -47,13 +47,13 @@
 
       <div class="d-flex flex-wrap">
 
-        <span class="badge bg-primary m-1">{{ country.translations['ara']?.common  }}</span>
-        <span class="badge bg-primary m-1">{{ country.translations['ces']?.common  }}</span>
-        <span class="badge bg-primary m-1">{{ country.translations['deu']?.common  }}</span>
-        <span class="badge bg-primary m-1">{{ country.translations['fra']?.common  }}</span>
+        <span class="badge bg-primary m-1">{{ country.translations['ara'].common  }}</span>
+        <span class="badge bg-primary m-1">{{ country.translations['ces'].common  }}</span>
+        <span class="badge bg-primary m-1">{{ country.translations['deu'].common  }}</span>
+        <span class="badge bg-primary m-1">{{ country.translations['fra'].common  }}</span>
 
-        <span class="badge bg-primary m-1">{{ country.translations['jpn']?.common  }}</span>
-        <span class="badge bg-primary m-1">{{ country.translations['kor']?.common  }}</span>
+        <span class="badge bg-primary m-1">{{ country.translations['jpn'].common  }}</span>
+        <span class="badge bg-primary m-1">{{ country.translations['kor'].common  }}</span>
       </div>
     </div>
   </div>

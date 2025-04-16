@@ -1,8 +1,21 @@
-
+<!--
 <input
       type="text"
       [placeholder]="placeholder"
       class="form-control"
       (keyup.enter)="onKeyUp( txtInput.value)"
       #txtInput
+
+      > -->
+<input
+      type="text"
+      [placeholder]="placeholder"
+      class="form-control"
+      [value]="initialValue"
+      (keyup)="onKeyPress( txtInput.value)"
+      #txtInput
+
       >
+
+      <!-- Debunce
+       Hacer peticion tan pronto el usuario deje de escribir -->
